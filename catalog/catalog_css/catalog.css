@@ -1,0 +1,360 @@
+/* Свойства для панели навигации */
+
+.Navigation_bar {
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: #F6F6F6;
+    border-bottom: 1px solid #C1C1C1;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    height: 3vw;
+    top: 0;
+}
+
+.Navigation_bar div:nth-last-child(-n+3) {
+    transition: transform 0.3s ease;
+}
+
+.Navigation_bar div:nth-last-child(-n+3):hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+.Navigation_bar > :first-child {
+    background: linear-gradient(to right, #260DC1, #59006F);
+    background-clip: text;
+    color: transparent;
+    font-size: 28px;
+    font-family: monospace;
+    padding-left: 10px;
+}
+
+.Navigation_bar > div > input {
+    width: 40vw;
+    height: 2vw;
+    border-style: none;
+    background-color: #DEDEDE;
+    border-radius: 5px;
+}
+
+.Navigation_bar > a {
+    text-decoration: none;
+    color: #555555;
+}
+
+.Navigation_bar > :last-child {
+    padding-right: 10px;
+}
+
+.Navigation_bar > a > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg {
+    margin-right: 0.5vw;
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+/* Свойства контейнера */
+
+.container {
+    display: flex;
+}
+
+.container .column > *:not(.Stocks) {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Свойства информации */
+
+.inf a {
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+.inf a:hover {
+    color: #260DC1;
+}
+
+.inf {
+    margin: 50px 0px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.inf > :first-child {
+    font-size: small;
+    color: #838383;
+}
+
+.inf > :nth-child(2) {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* Свойства для фильтров */
+ 
+.filtr {
+    margin: 20px 0px 0px 50px;
+    width: 12vw;
+    height: auto;
+    background-color: #F6F6F6;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.filtr > div {
+    padding: 10px;
+}
+
+.Company {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Company, .Price {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Company input[type="checkbox"], .Price input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Свойства для каталога */
+
+.Stocks {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px 0px 50px;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+}
+
+.Stocks > div {
+    width: 12vw;
+}
+
+.card {
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+}
+
+.card a > div:last-child {
+    height: 4vw;
+}
+
+.card > div {
+    height: 4vw;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card img {
+    width: 100%;
+    height: 12vw;
+    object-fit: contain;
+}
+
+.discounted-price {
+    text-decoration: line-through;
+    font-size: smaller;
+    margin-left: 10px;
+}
+
+.card a > div:nth-child(2) {
+    text-align: center;
+    font-weight: bold;
+}
+
+.Stocks div div:nth-last-child(2) {
+    color: #169B00;
+    font-size: small;
+}
+
+.Button {
+    border: none; 
+    outline: none; 
+    background-color: #091D9E;
+    color: #F6F6F6;
+    border-radius: 5px;
+    height: 2vw;
+    width: 10vw;
+}
+
+.Button:hover {
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.Button:active {
+    background-color: #BCC5FF;
+    color: #505050;
+}
+
+/* Адаптив */
+
+@media (max-width: 1500px) {
+    .Stocks {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        column-gap: 60px;
+    }
+
+    .card a > div:last-child {
+        font-size: larger;
+        height: 10vw;
+    }
+}
+
+@media (max-width: 1360px) {
+    .Stocks {
+        column-gap: 50px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .Stocks {
+        column-gap: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .Navigation_bar > div > input {
+        display: none;
+    }
+
+    .filtr {
+        width: 18vw;
+    }
+
+    .Stocks { 
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+    .filtr {
+        width: 20vw;
+    }
+
+    .Stocks > div {
+        width: 180px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .Stocks {
+        column-gap: 30px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .Stocks {
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .Stocks {
+        column-gap: 18vw;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+
+@media (max-width: 1070px) {
+    .Stocks {
+        column-gap: 12vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .Stocks {
+        column-gap: 12vw;
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .Navigation_bar {
+        flex-direction: column;
+        height: 100%;
+        font-size: larger;
+    }
+
+    .filtr {
+        width: 25vw;
+    }
+
+    .card a > div:last-child {
+        font-size: larger;
+        height: 15vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .filtr {
+        width: 30vw;
+    }
+
+    .card a > div:last-child {
+        font-size: larger;
+        height: 20vw;
+    }
+
+    .Button {
+        width: 80%;
+        height: 10%;
+    }
+}
+
+@media (max-width: 800px) {
+    .filtr {
+        width: 20vw;
+    }
+}
+  
+@media (max-width: 600px) {
+    .card a > div:last-child {
+          height: 20vw;
+      }
+  
+    .Button {
+          width: 95%;
+          height: 20%;
+    }
+
+    .filtr {
+        width: 65%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .Stocks .card {
+        width: 90%;
+    }
+}
+  

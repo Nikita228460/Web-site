@@ -1,0 +1,71 @@
+body {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.Name {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.card {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.card:nth-child(2) div:first-child {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.card > :nth-child(2) div:not(:first-child) {
+    padding-top: 10px;
+}
+
+img {
+    height: 20vw;
+    width: 15vw;
+}
+
+.card > :last-child {
+    font-size: 100px;
+    padding: 20px;
+}
+
+.hm {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(86, 86, 86);
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.nc {
+    font-size: larger;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card > :last-child {
+        font-size: 50px;
+    }
+}

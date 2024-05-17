@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.dws-form {
+    background: #ffffff;
+    padding: 20px;
+    width: 80%;
+    max-width: 300px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.dws-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #298cad;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #36d2ff;
+}
+
+button > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .dws-form {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .dws-form {
+        width: 70%;
+    }
+}

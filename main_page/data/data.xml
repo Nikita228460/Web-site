@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <product id = "1">
+        <id>1</id>
+        <name>Пылесос Bosch BWD421PRO</name>
+        <image>/image/imagesForStocks/Пылесос Bosch BWD421PRO.webp</image>
+        <price>875 Br</price>
+        <discountedPrice>1000 Br</discountedPrice>
+        <availability>В наличии</availability>
+        <url>/cards/ПылесосBoschBWD421PRO.html</url>
+    </product>
+    <product id = "2">
+        <id>2</id>
+        <name>Вертикальный беспроводной моющий пылесос Dreame H12 Pro</name>
+        <image>/image/imagesForStocks/Вертикальный беспроводной моющий пылесос Dreame H12 Pro wet and dry Vacuum Cleaner.jpg</image>
+        <price>1200 Br</price>
+        <discountedPrice>1890 Br</discountedPrice>
+        <availability>В наличии</availability>
+        <url>/cards/Вертикальный беспроводной моющийпылесосDreameH12Pro.html</url>
+    </product>
+    <product id = "3">
+        <id>3</id>
+        <name>Холодильник двухкамерный бытовой Pozis RK-139</name>
+        <image>/image/Холодильник двухкамерный бытовой Pozis RK-139.jpg</image>
+        <price>2900 Br</price>
+        <discountedPrice>3400 Br</discountedPrice>
+        <availability>В наличии</availability>
+        <url>/cards/Холодильник двухкамерный бытовой Pozis RK-139.html</url>
+    </product>
+    <product id = "4">
+        <id>4</id>
+        <name>Микроволновя печь SAMSUNG MS23K3515AS/BW</name>
+        <image>/image/imagesForStocks/Микроволновя печь SAMSUNG MS23K3515AS BW.jpg</image>
+        <price>1200 Br</price>
+        <discountedPrice>1500 Br</discountedPrice>
+        <availability>В наличии</availability>
+        <url>/cards/Микроволновя печь SAMSUNG MS23K3515AS BW.html</url>
+    </product>
+    <product id = "5">
+        <id>5</id>
+        <name>Стиральная машина Lg F2J6NNFW</name>
+        <image>/image/imagesForStocks/Стиральная машина Lg F2J6NNFW.jpg</image>
+        <price>2000 Br</price>
+        <discountedPrice>2500 Br</discountedPrice>
+        <availability>Нет в наличии</availability>
+        <url>/cards/Стиральная машина Lg F2J6NNFW.html</url>
+    </product>
+    <product id = "6">
+        <id>6</id>
+        <name>Стиральная машина LG F2J6HSDS</name>
+        <image>/image/imagesForStocks/Стиральная машина LG F2J6HSDS.jpg</image>
+        <price>2200 Br</price>
+        <discountedPrice>2800 Br</discountedPrice>
+        <availability>В наличии</availability>
+        <url>/cards/Стиральная машина LG F2J6HSDS.html</url>
+    </product>
+</products>

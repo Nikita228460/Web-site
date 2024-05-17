@@ -1,0 +1,609 @@
+/* Свойства для панели навигации */
+
+.Navigation_bar {
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: #F6F6F6;
+    border-bottom: 1px solid #C1C1C1;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    height: 3vw;
+    top: 0;
+}
+
+.Navigation_bar div:nth-last-child(-n+3) {
+    transition: transform 0.3s ease;
+}
+
+.Navigation_bar div:nth-last-child(-n+3):hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+.Navigation_bar > :first-child {
+    background: linear-gradient(to right, #260DC1, #59006F);
+    background-clip: text;
+    color: transparent;
+    font-size: 28px;
+    font-family: monospace;
+    padding-left: 10px;
+}
+
+.Navigation_bar > div > input {
+    width: 40vw;
+    height: 2vw;
+    border-style: none;
+    background-color: #DEDEDE;
+    border-radius: 5px;
+}
+
+.Navigation_bar > a {
+    text-decoration: none;
+    color: #555555;
+}
+
+.Navigation_bar > :last-child {
+    padding-right: 10px;
+}
+
+.Navigation_bar > a > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg {
+    margin-right: 0.5vw;
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+/* Свойства для баннера с рекламой 1676 X 359 картинки*/
+
+.Billboard {
+    background-color: #000000;
+    border: 2px solid black;
+    position: relative;
+    border-radius: 5px;
+    margin: 50px 50px 0px 50px;
+}
+
+.Billboard > .images {
+    height: 20vw;
+}
+
+.Billboard > .images img {
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+}
+
+/* Стили для кнопок */
+
+.Billboard .previousButton, .Billboard .nextButton {
+    position: absolute;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7); 
+    bottom: 10px;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.Billboard .previousButton {
+    left: 10px; 
+}
+
+.Billboard .nextButton {
+    right: 10px; 
+}
+
+/* Стили для контейнера кнопок */
+.Billboard .button-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Свойства для текста */
+
+.nameCatalog {
+    font-size: xx-large;
+    margin: 50px 50px 20px 50px;
+}
+
+/* Свойства для каталога */
+
+.Catalog {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px 0px 50px;
+}
+
+.Catalog > a {
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    width: 9vw;
+    height: 9vw;
+}
+
+.Catalog > a:hover {
+    transform: scale(1.05);
+}
+
+.Catalog .types {
+    background-color: #BCC5FF;
+    border-radius: 5px;
+}
+
+.Catalog > a > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+}
+
+.Catalog > a > div > div > img {
+    padding: 1vw;
+    width: 8vw;
+    height: 8vw;
+}
+
+/* Свойства для текста */
+
+.nameStocks {
+    font-size: xx-large;
+    margin: 50px 50px 20px 50px;
+    margin-bottom: 20px;
+}
+
+/* Свойства для акций */
+
+.Stocks {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px 0px 50px;
+}
+
+.Stocks > div {
+    transition: transform 0.3s ease;
+    width: 12vw;
+}
+
+.Stocks > div:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+}
+
+.card a > div:last-child {
+    height: 4vw;
+}
+
+.card > div {
+    height: 4vw;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card img {
+    width: 100%;
+    height: 12vw;
+    object-fit: contain;
+}
+
+.discounted-price {
+    text-decoration: line-through;
+    font-size: smaller;
+    margin-left: 10px;
+}
+
+.card a > div:nth-child(2) {
+    text-align: center;
+    font-weight: bold;
+}
+
+.Stocks div div:nth-last-child(2) {
+    color: #169B00;
+    font-size: small;
+}
+
+.Button {
+    border: none; 
+    outline: none; 
+    background-color: #091D9E;
+    color: #F6F6F6;
+    border-radius: 5px;
+    height: 2vw;
+    width: 10vw;
+}
+
+.Button:hover {
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.Button:active {
+    background-color: #BCC5FF;
+    color: #505050;
+}
+
+/* Свойства для информации */
+
+.Info {
+    margin-top: 50px;
+    background-color: #595959;
+    font-family: Arial, sans-serif;
+}
+
+.Info table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.Info th {
+    background-color: #2C2C2C;
+    color: #F6F6F6;
+    padding: 10px;
+    text-align: left;
+}
+
+.Info td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.Info li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.Info li > a {
+    color: rgb(216, 216, 216);
+    text-decoration: none;
+}
+
+.Info li > a:hover {
+    text-decoration: underline;
+}
+
+.Info ul {
+    padding-left: 0;
+}
+
+.Info .toggle {
+    display: none;
+}
+
+/* Адаптив */
+@media (max-width: 1493px) {
+    .card a > div:last-child {
+        height: 5vw;
+    }
+}
+
+@media (max-width: 1377px) {
+    .card a > div:last-child {
+        height: 6vw;
+    }
+}
+
+@media (max-width: 1130px) {
+    .card a > div:last-child {
+        height: 7vw;
+    } 
+}
+
+@media (max-width: 1058px) {
+    .Navigation_bar {
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        padding: 10px;
+    }
+
+    .Navigation_bar input {
+        display: none;
+    }
+ 
+    .svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .Catalog {
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        grid-row-gap: 70px; 
+    }    
+
+    .Catalog > a > div > div > img {
+        padding: 1vw;
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .Stocks {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-row-gap: 70px; 
+    }
+
+    .card a > div:last-child {
+        height: 8vw;
+        font-size: small;
+    }
+    
+    .Stocks > div {
+        width: 120px;
+    }
+
+    .nextButton, .previousButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4vw;
+        width: 8vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .Catalog {
+        grid-template-columns: repeat(4, auto);
+        grid-row-gap: 90px; 
+        margin-bottom: 80px;
+    }  
+    
+    .Catalog > a > div > div > img {
+        padding: 1vw;
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .Catalog > a {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .Stocks {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-row-gap: 70px; 
+    }
+
+    .card img {
+        width: 100%;
+        height: 25vw;
+    }
+
+    .Billboard .previousButton, .Billboard .nextButton {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    .Billboard .previousButton, .Billboard .nextButton {
+        width: 6vw;
+        font-size: 12px;
+    }
+
+    .Catalog {
+        grid-template-columns: repeat(3, auto);
+        grid-row-gap: 90px; 
+        margin-bottom: 80px;
+    }  
+    
+    .Catalog > a > div > div > img {
+        padding: 1vw;
+        width: 14vw;
+        height: 14vw;
+    }
+
+    .Catalog > a {
+        width: 14vw;
+        height: 14vw;
+    }
+
+    .Stocks {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-row-gap: 70px; 
+    }
+
+    .card a > div:last-child {
+        height: 8vw;
+        font-size: small;
+    }
+    
+    .Stocks > div {
+        width: 150px;
+    }
+
+    .Button {
+        font-size: small;
+        width: 11vw;
+        height: 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .Billboard .images {
+        height: 40vw;
+    }
+
+    .Billboard .previousButton, .Billboard .nextButton {
+        width: 12vw;
+        font-size: 16px;
+    }
+
+    .Stocks .card a > div:last-child {
+        font-size: 16px;
+        height: 100px;
+    }
+
+    .Stocks .card > div {
+        font-size: 16px;
+        height: 50px;
+    }
+
+    .Stocks .card .Button {
+        width: 80%;
+        height: 10%;
+        font-size: 14px;
+    }
+
+    .Catalog > a > div > div > img{
+        width: 16vw;
+        height: 16vw;
+    }
+}
+
+@media (max-width: 650px) {
+    .Stocks {
+        grid-template-columns: repeat(2, auto); 
+    }
+
+    .Stocks .card {
+        width: 28vw;
+    }
+
+    .Catalog > a > div > div > img{
+        width: 24vw;
+        height: 24vw;
+    }
+
+    .Catalog > a > div > div:last-child {
+        text-align: center;
+        width: 24vw;
+    }
+
+    .Catalog {
+        margin: 0px 100px 150px 100px;
+        grid-template-columns: repeat(2, auto);
+        grid-row-gap: 150px;
+    } 
+
+    .Billboard .previousButton, .Billboard .nextButton {
+        width: 16vw;
+        height: 4vw;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Navigation_bar {
+        flex-direction: column;
+    }
+
+    .Navigation_bar a {
+        margin: 5px;
+    }
+
+    .Billboard {
+        display: none;
+    }
+
+    .Catalog > a > div > div > img{
+        width: 28vw;
+        height: 28vw;
+    }
+
+    .Catalog > a > div > div:last-child {
+        text-align: center;
+        width: 28vw;
+    }
+
+    .Stocks .card {
+        width: 32vw;
+    }
+    
+    .Info table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .Info th,.Info td {
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .Info tr {
+        margin-bottom: 10px;
+    }
+
+    .top th {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+    .Info .toggle {
+        display: block;
+    }
+
+    .info-list1, .info-list2, .info-list3, .info-list4 {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .Catalog {
+        grid-template-columns: repeat(1, auto);
+        justify-content: center; 
+        align-items: center; 
+        gap: 200px;
+    } 
+
+    .Stocks {
+        grid-template-columns: repeat(1, auto);
+        grid-row-gap: 0px; 
+    }
+
+    .Stocks .card {
+        width: 100%;
+    }
+
+    .Catalog .types {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .Catalog {
+        gap: 250px;
+    }
+
+    .Catalog .types {
+        width: 50vw;
+        height: 50vw;
+    }
+}

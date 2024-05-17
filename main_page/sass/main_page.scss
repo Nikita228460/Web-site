@@ -1,0 +1,389 @@
+// Переменные для цветов и размеров
+$background-color-nav: #F6F6F6;
+$border-color-nav: #C1C1C1;
+$box-shadow-nav: 3px 3px 3px rgba(0, 0, 0, 0.1);
+$height-nav: 3vw;
+$top-nav: 0;
+$gradient-start-nav: #260DC1;
+$gradient-end-nav: #59006F;
+$font-size-nav: 28px;
+$font-family-nav: monospace;
+$input-width: 40vw;
+$input-height: 2vw;
+$input-bg-color: #DEDEDE;
+$button-padding: 10px;
+$button-font-size: 18px;
+$button-color: black;
+$button-bg-color: rgba(255, 255, 255, 0.7);
+$button-border-radius: 5px;
+$button-height: 2vw;
+$button-width: 10vw;
+$button-hover-border: 3px solid black;
+$button-active-bg-color: #BCC5FF;
+$button-active-color: #505050;
+$catalog-bg-color: #BCC5FF;
+$catalog-border-radius: 5px;
+$stock-card-padding: 5px;
+$stock-card-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+$stock-card-height: 4vw;
+$stock-card-img-height: 12vw;
+$stock-card-discounted-price-font-size: smaller;
+$stock-card-discounted-price-margin-left: 10px;
+$stock-card-title-font-weight: bold;
+$stock-card-title-font-size: small;
+$stock-card-title-color: #169B00;
+$stock-card-title-font-size-small: small;
+$stock-card-button-height: 2vw;
+$stock-card-button-width: 10vw;
+$stock-card-button-hover-border: 3px solid black;
+$stock-card-button-hover-border-radius: 5px;
+$stock-card-button-active-bg-color: #BCC5FF;
+$stock-card-button-active-color: #505050;
+$info-bg-color: #595959;
+$info-font-family: Arial, sans-serif;
+$info-table-layout: fixed;
+$info-table-border-collapse: collapse;
+$info-th-bg-color: #2C2C2C;
+$info-th-color: #F6F6F6;
+$info-th-padding: 10px;
+$info-th-text-align: left;
+$info-td-padding: 10px;
+$info-td-border: 1px solid #ddd;
+$info-li-padding: 5px 0;
+$info-li-a-color: rgb(216, 216, 216);
+$info-li-a-hover-text-decoration: underline;
+
+// Миксины для повторного использования стилей
+@mixin button-styles($bg-color, $color, $border-radius, $height, $width) {
+  border: none;
+  outline: none;
+  background-color: $bg-color;
+  color: $color;
+  border-radius: $border-radius;
+  height: $height;
+  width: $width;
+}
+
+// Преобразование CSS в SASS
+.navigation-bar {
+  position: relative;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  background-color: $background-color-nav;
+  border-bottom: 1px solid $border-color-nav;
+  box-shadow: $box-shadow-nav;
+  height: $height-nav;
+  top: $top-nav;
+
+  div:nth-last-child(-n+3) {
+    transition: transform 0.3s ease;
+  }
+
+  div:nth-last-child(-n+3):hover {
+    color: black;
+    transform: scale(1.1);
+  }
+
+  &:first-child {
+    background: linear-gradient(to right, $gradient-start-nav, $gradient-end-nav);
+    background-clip: text;
+    color: transparent;
+    font-size: $font-size-nav;
+    font-family: $font-family-nav;
+    padding-left: $button-padding;
+  }
+
+  > div > input {
+    width: $input-width;
+    height: $input-height;
+    border-style: none;
+    background-color: $input-bg-color;
+    border-radius: 5px;
+  }
+
+  > a {
+    text-decoration: none;
+    color: #555555;
+  }
+
+  > :last-child {
+    padding-right: $button-padding;
+  }
+
+  > a > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg {
+    margin-right: 0.5vw;
+    height: 1.5vw;
+    width: 1.5vw;
+  }
+}
+
+.billboard {
+  background-color: #000000;
+  border: 2px solid black;
+  position: relative;
+  border-radius: 5px;
+  margin: 50px 50px 0px 50px;
+
+  >.images {
+    height: 20vw;
+  }
+
+  >.images img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+ .previousButton,
+ .nextButton {
+    position: absolute;
+    border-radius: $button-border-radius;
+    background-color: $button-bg-color;
+    bottom: 10px;
+    border: none;
+    color: $button-color;
+    padding: $button-padding;
+    cursor: pointer;
+    font-size: $button-font-size;
+
+    &.previousButton {
+      left: 10px;
+    }
+
+    &.nextButton {
+      right: 10px;
+    }
+  }
+
+ .button-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Продолжение переменных
+$catalog-grid-gap: 70px;
+$stock-card-button-hover-border: 3px solid black;
+$stock-card-button-hover-border-radius: 5px;
+$stock-card-button-active-bg-color: #BCC5FF;
+$stock-card-button-active-color: #505050;
+$info-th-padding: 10px;
+$info-td-padding: 10px;
+$info-td-border: 1px solid #ddd;
+$info-li-padding: 5px 0;
+$info-li-a-color: rgb(216, 216, 216);
+$info-li-a-hover-text-decoration: underline;
+$info-ul-padding-left: 0;
+
+// Продолжение миксинов
+@mixin card-styles($padding, $box-shadow, $height, $img-height) {
+  padding: $padding;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $box-shadow;
+  height: $height;
+}
+
+// Преобразование остальных стилей
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px 0px 50px;
+
+  > a {
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    width: 9vw;
+    height: 9vw;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      word-break: break-all;
+
+      > div > img {
+        padding: 1vw;
+        width: 8vw;
+        height: 8vw;
+      }
+    }
+  }
+
+ .types {
+    background-color: $catalog-bg-color;
+    border-radius: $catalog-border-radius;
+  }
+}
+
+.stocks {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px 0px 50px;
+
+  > div {
+    transition: transform 0.3s ease;
+    width: 12vw;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    div {
+      div:nth-last-child(2) {
+        color: $stock-card-title-color;
+        font-size: $stock-card-title-font-size;
+      }
+    }
+  }
+}
+
+.card {
+  @include card-styles($stock-card-padding, $stock-card-box-shadow, $stock-card-height, $stock-card-img-height);
+
+  a > div:last-child {
+    height: 4vw;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  img {
+    width: 100%;
+    height: $stock-card-img-height;
+    object-fit: contain;
+  }
+
+  a > div:nth-child(2) {
+    text-align: center;
+    font-weight: $stock-card-title-font-weight;
+  }
+
+  div:nth-last-child(2) {
+    color: $stock-card-title-color;
+    font-size: $stock-card-title-font-size-small;
+  }
+}
+
+.button {
+  @include button-styles($button-active-bg-color, $button-active-color, $button-border-radius, $stock-card-button-height, $stock-card-button-width);
+
+  &:hover {
+    border: $stock-card-button-hover-border;
+    border-radius: $stock-card-button-hover-border-radius;
+  }
+
+  &:active {
+    background-color: $button-active-bg-color;
+    color: $button-active-color;
+  }
+}
+
+.info {
+  margin-top: 50px;
+  background-color: $info-bg-color;
+  font-family: $info-font-family;
+
+  table {
+    width: 100%;
+    table-layout: $info-table-layout;
+    border-collapse: $info-table-border-collapse;
+  }
+
+  th {
+    background-color: $info-th-bg-color;
+    color: $info-th-color;
+    padding: $info-th-padding;
+    text-align: $info-th-text-align;
+  }
+
+  td {
+    padding: $info-td-padding;
+    border: $info-td-border;
+  }
+
+  li {
+    list-style-type: none;
+    padding: $info-li-padding;
+  }
+
+  li > a {
+    color: $info-li-a-color;
+    text-decoration: $info-li-a-hover-text-decoration;
+  }
+
+  ul {
+    padding-left: $info-ul-padding-left;
+  }
+}
+
+// Адаптивные медиа-запросы
+@media (max-width: 1493px) {
+ .card a > div:last-child {
+    height: 5vw;
+  }
+}
+
+// Продолжение переменных
+$footer-bg-color: #333;
+$footer-color: white;
+$footer-padding: 20px;
+$footer-font-size: 16px;
+$footer-link-color: #ccc;
+$footer-link-hover-color: #fff;
+
+// Продолжение миксинов
+@mixin footer-styles($bg-color, $color, $padding, $font-size, $link-color, $link-hover-color) {
+  background-color: $bg-color;
+  color: $color;
+  padding: $padding;
+  font-size: $font-size;
+  a {
+    color: $link-color;
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+}
+
+// Преобразование остальных стилей
+.footer {
+  @include footer-styles($footer-bg-color, $footer-color, $footer-padding, $footer-font-size, $footer-link-color, $footer-link-hover-color);
+}
+
+// Продолжайте добавлять медиа-запросы для каждого размера экрана...
+@media (max-width: 768px) {
+ .footer {
+    padding: 10px;
+  }
+}
+
+// Пример использования миксина для создания нового стиля
+.custom-footer {
+  @include footer-styles(#444, #eee, 30px, 18px, #aaa, #bbb);
+}

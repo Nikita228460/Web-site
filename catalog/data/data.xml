@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <product id = "1">
+        <id>1</id>
+        <name>Робот-пылесос RED RV-R56S</name>
+        <image>/catalog/img/Робот-пылесос AENO RC2S.jpg</image>
+        <price>1529 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Робот-пылесос RED RV-R56S.html</url>
+    </product>
+
+    <product id = "2">
+        <id>2</id>
+        <name>Пылесос SAMSUNG VCC5241S3K/XEV</name>
+        <image>/catalog/img/Пылесос SAMSUNG VCC5241S3K XEV.jpg</image>
+        <price>319 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Пылесос SAMSUNG VCC5241S3KXEV.html</url>
+    </product>
+
+    <product id = "3">
+        <id>3</id>
+        <name>Пылесос вертикальный Xiaomi Mi Vacuum Cleaner G9 Plus</name>
+        <image>/catalog/img/Пылесос вертикальный Xiaomi Mi Vacuum Cleaner G9 Plus.webp</image>
+        <price>749 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/ПылесосBoschBWD421PRO.html</url>
+    </product>
+
+
+
+    <product id = "4">
+        <id>4</id>
+        <name>Стирально-сушильная машина Electrolux EW7W268SP</name>
+        <image>/catalog/img/Стирально-сушильная машина Electrolux EW7W268SP.jpeg</image>
+        <price>3 549 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Стирально-сушильная машина Electrolux EW7W268SP.html</url>
+    </product>
+
+    <product id = "5">
+        <id>5</id>
+        <name>Стиральная машина MAUNFELD MFWM1410WH02</name>
+        <image>/catalog/img/Стиральная машина MAUNFELD MFWM1410WH02.png</image>
+        <price>1840 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Стиральная машина MAUNFELD MFWM1410WH02.html</url>
+    </product>
+
+    <product id = "6">
+        <id>6</id>
+        <name>Стиральная машина LG F2V9GW9P</name>
+        <image>/catalog/img/стиральная машина LG F2V9GW9P.jpg</image>
+        <price>2160 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Стиральная машина LG F2V9GW9P.html</url>
+    </product>
+
+
+
+    <product id = "7">
+        <id>7</id>
+        <name>Микроволновая печь Samsung MS23J5133AK</name>
+        <image>/catalog/img/Микроволновая печь Samsung MS23J5133AK.jpg</image>
+        <price>469 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Микроволновая печь Samsung MS23J5133AK.html</url>
+    </product>
+
+    <product id = "8">
+        <id>8</id>
+        <name>Микроволновая печь Samsung MS23F302TAS</name>
+        <image>/catalog/img/Микроволновая печь Samsung MS23F302TAS.jpg</image>
+        <price>585 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Микроволновая печь Samsung MS23F302TAS.html</url>
+    </product>
+
+    <product id = "9">
+        <id>9</id>
+        <name>Микроволновая печь Samsung MS23J5133ATBW</name>
+        <image>/catalog/img/Микроволновая печь Samsung MS23J5133ATBW.jpg</image>
+        <price>459 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Микроволновая печь Samsung MS23J5133ATBW.html</url>
+    </product>
+
+
+
+    <product id = "10">
+        <id>10</id>
+        <name>Духовой шкаф Samsung NV68A1110BBWT</name>
+        <image>/catalog/img/Духовой шкаф Samsung NV68A1110BBWT.jpg</image>
+        <price>1299 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Духовой шкаф Samsung NV68A1110BBWT.html</url>
+    </product>
+
+    <product id = "11">
+        <id>11</id>
+        <name>Плита электрическая Maunfeld MEC611CS10TD</name>
+        <image>/catalog/img/Плита электрическая Maunfeld MEC611CS10TD.png</image>
+        <price>2499 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Плита электрическая Maunfeld MEC611CS10TD.html</url>
+    </product>
+
+    <product id = "12">
+        <id>12</id>
+        <name>Кухонная плита GEFEST 6502-02 0044</name>
+        <image>/catalog/img/Кухонная плита GEFEST 6502-02 0044.jpg</image>
+        <price>1014 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Кухонная плита GEFEST 6502-02 0044.html</url>
+    </product>
+
+
+
+    <product id = "13">
+        <id>13</id>
+        <name>Холодильник с морозильником LG GC-L257CBEC</name>
+        <image>/catalog/img/Холодильник с морозильником LG GC-L257CBEC.jpg</image>
+        <price>4800 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Холодильник с морозильником LG GC-L257CBEC.html</url>
+    </product>
+
+    <product id = "14">
+        <id>14</id>
+        <name>Холодильник с морозильником Centek CT-1749 NF Inox Inverter</name>
+        <image>/catalog/img/Холодильник с морозильником Centek CT-1749 NF Inox Inverter.png</image>
+        <price>3000 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Холодильник с морозильником Centek CT-1749 NF Inox Inverter.html</url>
+    </product>
+
+    <product id = "15">
+        <id>15</id>
+        <name>Холодильник side by side Bosch KAN93VL30R</name>
+        <image>/catalog/img/Холодильник side by side Bosch KAN93VL30R.jpg</image>
+        <price>5800 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Холодильник side by side Bosch KAN93VL30R.html</url>
+    </product>
+
+
+
+    <product id = "16">
+        <id>16</id>
+        <name>Посудомоечная машина Korting KDF 60240 N</name>
+        <image>/catalog/img/Посудомоечная машина Korting KDF 60240 N.jpg</image>
+        <price>1100 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Посудомоечная машина Korting KDF 60240 N.html</url>
+    </product>
+
+    <product id = "17">
+        <id>17</id>
+        <name>Отдельностоящая посудомоечная машина Samsung DW60A8050FBEU</name>
+        <image>/catalog/img/Отдельностоящая посудомоечная машина Samsung DW60A8050FBEU.jpeg</image>
+        <price>4500 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Отдельностоящая посудомоечная машина Samsung DW60A8050FBEU.html</url>
+    </product>
+
+    <product id = "18">
+        <id>18</id>
+        <name>Посудомоечная машина Siemens SR61IX05KE</name>
+        <image>/catalog/img/Посудомоечная машина Siemens SR61IX05KE.jpg</image>
+        <price>1875 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Посудомоечная машина Siemens SR61IX05KE.html</url>
+    </product>
+
+
+
+    <product id = "19">
+        <id>19</id>
+        <name>Умный кондиционер Viomi Smart Air Cross</name>
+        <image>/catalog/img/Умный кондиционер Viomi Smart Air Cross.jpg</image>
+        <price>3200 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Умный кондиционер Viomi Smart Air Cross.html</url>
+    </product>
+
+    <product id = "20">
+        <id>20</id>
+        <name>Сплит-система Viomi Cross Pro 9000BTU KFR-25GW/EY2UMC-A++/A+</name>
+        <image>/catalog/img/Сплит-система Viomi Cross Pro 9000BTU KFR-25GWEY2UMC-A++A+.jpg</image>
+        <price>2100 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Сплит-система Viomi Cross Pro 9000BTU KFR-25GWEY2UMC-A++A+.html</url>
+    </product>
+
+    <product id = "21">
+        <id>21</id>
+        <name>Сплит-система LG AC09BK</name>
+        <image>/catalog/img/Сплит-система LG AC09BK.webp</image>
+        <price>4290 Br</price>
+        <availability>В наличии</availability>
+        <url>/cards/Сплит-система LG AC09BK.html</url>
+    </product>
+</products>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/catalog/catalog_css/catalog.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Navigation_bar">
+        <div>Tehnika.by</div>
+        <div> <input type="text" id="searchInput" placeholder="Введите текст для поиска..."></div>
+        <a href="/catalog/catalog_html/catalog.html" class="catalogLink"><div><img class="svg" src="/svg/threebars.svg">Каталог</div></a>
+        <a href="/basket/basket_html/basket.html"><div><img class="svg" src="/svg/shoppingcartoutline.svg">Корзина</div></a>
+        <a href="/profile/form/form_html/form.html"><div><img class="svg" src="/svg/Person.svg">Профиль</div></a>
+    </div>
+
+    <div class="container">
+        <div class="column">
+            <div class="inf">
+                <div> <a href="/main_page/main_page_html/main_page.html"> &lt; На главную //</a> Главная / Каталог</div>
+                <div>Каталог</div>
+                <div>Фильтры</div>
+            </div>
+            <div class="filtr">
+                <div>Категория</div>
+                <div class="Company">
+                    <div><input type="checkbox" class="vac"> Пылесосы</div>
+                    <div><input type="checkbox" class="stir"> Стиральные машины</div>
+                    <div><input type="checkbox" class="micr"> Микроволновые печи</div>
+                    <div><input type="checkbox" class="plit"> Кухонные плиты</div>
+                    <div><input type="checkbox" class="hol"> Холодильники</div>
+                    <div><input type="checkbox" class="pos"> Посудомоечные машины</div>
+                    <div><input type="checkbox" class="kon"> Кондиционеры</div>
+                </div>
+            </div>  
+        </div>
+
+        <div class="Stocks"></div>
+        
+    </div>
+
+    <script src="/catalog/catalog_js/catalog.js"></script>
+    <script src="/catalog/data/data.xml"></script>
+</body>
+</html>

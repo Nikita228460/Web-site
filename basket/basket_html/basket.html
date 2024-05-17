@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/basket/basket _css/basket.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Navigation_bar">
+        <div>Tehnika.by</div>
+        <div> <input type="text" id="searchInput" placeholder="Введите текст для поиска..."></div>
+        <a href="/catalog/catalog_html/catalog.html" class="catalogLink"><div><img class="svg" src="/svg/threebars.svg">Каталог</div></a>
+        <a href="/basket/basket_html/basket.html"><div><img class="svg" src="/svg/shoppingcartoutline.svg">Корзина</div></a>
+        <a href="/profile/form/form_html/form.html"><div><img class="svg" src="/svg/Person.svg">Профиль</div></a>
+    </div>
+
+    <div class="MyBasket">
+        <div>Моя корзина</div>
+        <a href="/main_page/main_page_html/main_page.html">На главную</a>
+    </div>
+    
+    <div id="elements" class="elements"></div>
+    
+    <div class="box">
+        <div class="NUM">
+            <div>Количество товаров:  </div>
+            <div class="Num"></div>
+        </div>
+        <div class="PRICE">
+            <div>Итого:  </div>
+            <div class="Price"></div>
+        </div>
+        <div><input type="button" class="but" value="Сделать заказ"></div>
+    </div>
+    
+    <script src="/basket/basket_js/basket1.js"></script>
+    <script src="/basket/basket_js/basket.js"></script>
+</body>
+</html>
